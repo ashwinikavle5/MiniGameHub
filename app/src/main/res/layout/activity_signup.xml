@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F3FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎮"
+            android:textSize="65sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#7B4BB7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join MiniGame Hub!"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/edtSignupName"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Enter your name"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/edtSignupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Create password"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:autofillHints="newPassword"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Confirm password"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:autofillHints="newPassword"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="CREATE ACCOUNT"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9B6DDB"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? LOGIN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#7B4BB7"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

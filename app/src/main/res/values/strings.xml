@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mini Game Hub</string>
+
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="create_account_subtitle">Create your Mini Game Hub account</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="create_password">Create password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_account">Already have an account? LOGIN</string>
+
+</resources>

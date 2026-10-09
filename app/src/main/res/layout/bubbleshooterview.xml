@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#19142D"
+    android:padding="14dp">
+
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#282044">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🫧 Bubble Shooter"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/txtLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEVEL 1"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#BCA9E8"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFD54F"/>
+
+    </LinearLayout>
+
+
+    <!-- GAME AREA -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="#231C40"
+        android:padding="5dp">
+
+        <com.example.minigamehub.BubbleShooterView
+            android:id="@+id/bubbleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <!-- RESTART -->
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="PLAY AGAIN 🔄"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7E57C2"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+
+    <!-- INSTRUCTION -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="🎯 Tap where you want to shoot!"
+        android:textSize="14sp"
+        android:textColor="#AFA3C7"/>
+
+</LinearLayout>
+

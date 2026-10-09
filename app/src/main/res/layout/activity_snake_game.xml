@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101820"
+    android:padding="12dp">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="◀ BACK"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E3A48"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🐍 Snake Game"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#76FF03"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"/>
+
+    </LinearLayout>
+
+    <!-- INSTRUCTION -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="🎮 Swipe, tap screen, or use buttons below to steer • Eat 🍎"
+        android:textSize="12sp"
+        android:textColor="#90A4AE"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- GAME BOARD -->
+    <com.example.minigamehub.SnakeView
+        android:id="@+id/snakeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- CONTROLS D-PAD -->
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="72dp"
+            android:layout_height="44dp"
+            android:text="⬆"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#37474F"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="72dp"
+                android:layout_height="44dp"
+                android:text="⬅"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#37474F"
+                android:layout_marginEnd="32dp"/>
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="72dp"
+                android:layout_height="44dp"
+                android:text="➡"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#37474F"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="72dp"
+            android:layout_height="44dp"
+            android:text="⬇"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#37474F"/>
+
+    </LinearLayout>
+
+    <!-- RESTART -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="RESTART GAME 🔄"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B4BB7"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

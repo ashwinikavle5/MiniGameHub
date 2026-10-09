@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F8F3FF"
+    android:padding="20dp">
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❌⭕ Tic Tac Toe"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#7B4BB7"/>
+
+
+    <!-- STATUS -->
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"/>
+
+
+    <!-- ROW 1 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+    </LinearLayout>
+
+
+    <!-- ROW 2 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+    </LinearLayout>
+
+
+    <!-- ROW 3 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/btn22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="32sp"/>
+
+    </LinearLayout>
+
+
+    <!-- RESTART -->
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="RESTART GAME 🔄"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B4BB7"
+        android:layout_marginTop="25dp"/>
+
+    <!-- BACK -->
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="BACK TO GAMES 🎮"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#7B4BB7"
+        android:backgroundTint="#E8DAFF"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
+
